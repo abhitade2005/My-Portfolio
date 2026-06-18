@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Abhishek Tade for full-stack web development, frontend work, and collaboration opportunities." />
+  <meta property="og:title" content="Contact Abhishek Tade" />
+  <meta property="og:description" content="Reach out to Abhishek Tade for MERN stack and frontend development opportunities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="abhi.jpg" />
+  <title>Contact - Abhishek Tade</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <div class="logo-wordmark">AT<span class="dot">.</span></div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#projects" class="nav-link">Work</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li>
+            <a class="nav-cta" href="Assests/Resume_Abhishek(draft).pdf" target="_blank" rel="noopener noreferrer">
+              View Resume <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#projects" class="nav-link">Work</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="Assests/Resume_Abhishek(draft).pdf" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta mobile-resume">View Resume <i class="fa-solid fa-arrow-up-right"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-header">
+        <p class="section-label">GET IN TOUCH</p>
+        <h1 class="contact-title">Let's work<br> together<span class="dot">.</span></h1>
+        <p class="contact-subtitle">Have a project in mind or just want to chat? Feel free to reach out.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h3>Email</h3>
+              <a href="mailto:abhitade2005@gmail.com">abhitade2005@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="info-content">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/abhishek-tade-048061340/" target="_blank">Abhishek Tade</a>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="info-content">
+              <h3>GitHub</h3>
+              <a href="https://github.com/abhitade2005" target="_blank">abhitade2005</a>
+            </div>
+          </div>
+
+          <div class="social-links-box">
+            <a href="https://www.linkedin.com/in/abhishek-tade-048061340/" target="_blank" class="social-icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/abhitade2005" target="_blank" class="social-icon">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/abhiii_shek03/" target="_blank" class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:abhitade2005@gmail.com" class="social-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-message"></div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <span>Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Abhishek Tade. All rights reserved.</p>
+        <p>Built with <i class="fa-solid fa-heart" style="color:#e05a6d"></i> and a lot of coffee.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>

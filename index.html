@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abhishek Tade is a MERN stack developer and competitive programmer building responsive full-stack web applications." />
+  <meta property="og:title" content="Abhishek Tade - MERN Stack Developer" />
+  <meta property="og:description" content="Portfolio of Abhishek Tade: full-stack projects, DSA practice, and frontend engineering work." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="abhi.jpg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <title>Abhishek Tade - Full Mern-stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <nav>
+      <div class="logo-wordmark">ABHISHEK<span class="dot">.</span></div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="https://leetcode.com/u/abhitade2005/" class="nav-link">LeetCode</a></li>
+          <li>
+            <a class="nav-cta" href="Assests/Resume_Abhishek(draft).pdf" target="_blank" rel="noopener noreferrer">
+              View Resume <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Work</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="Assests/Resume_Abhishek(draft).pdf" target="_blank" rel="noopener noreferrer" class="nav-link nav-cta mobile-resume">View Resume <i class="fa-solid fa-arrow-up-right"></i></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-text" aria-hidden="true">DEV</div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-eyebrow"><span class="dot-live"></span> Available for work</p>
+        <h1 class="hero-title">
+          Hi, I'm<br>
+          <em>Abhishek</em><br>
+          Tade
+        </h1>
+        <p class="hero-sub">
+          <span id="element"></span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="contact.html" class="btn-ghost">Say Hello <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-wrap">
+          <img src="Devloper.png" alt="Abhishek Tade" />
+          <div class="hero-img-accent"></div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-num">3+</span>
+          <span class="badge-label">Years<br>Coding</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <div class="about-img-container">
+          <img src="abhi.jpg" alt="Abhishek Tade" class="about-img" />
+          <div class="about-img-ring"></div>
+        </div>
+        <div class="about-stat-stack">
+          <div class="stat-item">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">4th </span>
+            <span class="stat-label">Year B.E.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">300+</span>
+<span class="stat-label">DSA Problems Solved</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="section-label">WHO AM I</p>
+        <h2 class="section-heading">About Me</h2>
+       <p class="about-bio">
+  I'm <strong>Abhishek Tade</strong>, a passionate Full Stack Developer and Final-year Engineering student at
+  <strong>SSBT's College of Engineering and Technology</strong>. I build scalable and responsive web applications using
+  <strong>React, Node.js, Express.js,</strong> and <strong>MongoDB</strong>. Alongside development, I have solved
+  <strong>300+ DSA problems</strong> on LeetCode and enjoy applying problem-solving skills to create efficient software solutions.
+</p>
+        <p class="currently-learning">
+          Currently exploring TypeScript, Next.js performance patterns, and production-ready backend architecture.
+        </p>
+
+        <div class="tab-bar">
+          <button class="tab-btn active" data-tab="Skills">Skills</button>
+          <button class="tab-btn" data-tab="Experience">Experience</button>
+          <button class="tab-btn" data-tab="Education">Education</button>
+        </div>
+
+        <div class="tab-panel active" id="Skills">
+          <div class="skill-chips">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">C++</span>
+            <span class="chip">DSA</span>
+            <span class="chip">Bootstrap</span>
+            <span class="chip">React.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">SQL</span>
+            <span class="chip">OOPS</span>
+            <span class="chip">CN</span>
+            <span class="chip">OS</span>
+          </div>
+        </div>
+
+        <div class="tab-panel" id="Experience">
+          <ul class="timeline-list">
+            <li>
+              <span class="tl-year">2025</span>
+              <div>
+                <strong>Frontend Intern</strong> — ShadowFox
+                <p>Worked on real-world frontend tasks and UI components.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">Ongoing</span>
+              <div>
+                <strong>5+ Web UI Projects</strong>
+                <p>Portfolio sites, booking platforms, utility apps.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">Ongoing</span>
+              <div>
+                <strong>Open-Source Contributor</strong>
+                <p>Active on GitHub, contributing to community projects.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="Education">
+          <ul class="timeline-list">
+            <li>
+              <span class="tl-year">2023–27</span>
+              <div>
+                <strong>B.E. Computer Engineering</strong>
+                <p>SSBT's COET, Jalgaon — Expected 2027</p>
+              </div>
+            </li>
+            <li>
+              <span class="tl-year">Core</span>
+              <div>
+                <strong>Relevant Coursework</strong>
+                <p>DSA, Web Development, DBMS, Operating Systems</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="contact.html" class="btn-ghost">Get in Touch <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="projects-inner">
+      <div class="projects-header">
+        <p class="section-label">SELECTED WORK</p>
+        <h2 class="section-heading">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="Project1.jpg" alt="StaySphere" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-topline">
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">EJS</span>
+              </div>
+              <span class="project-status">Full Stack</span>
+            </div>
+            <h3>StaySphere</h3>
+            <p class="project-summary">A complete accommodation booking app with auth, listings, reviews, ownership checks, and image uploads.</p>
+            <ul class="case-points">
+              <li><strong>Role:</strong> Built the full-stack MVC flow from routes and schemas to EJS views.</li>
+              <li><strong>Challenge:</strong> Kept listing ownership, reviews, and uploads consistent with server-side validation.</li>
+              <li><strong>Impact:</strong> Shipped a complete CRUD booking experience across 4 core workflows.</li>
+            </ul>
+           
+            <div class="project-links">
+              <a href="https://github.com/abhitade2005/StaySphere-Project" target="_blank" class="proj-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://staysphere-project.onrender.com" target="_blank" rel="noopener noreferrer" class="proj-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="Project2.jpg" alt="VypaarX stock trading dashboard" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-topline">
+              <div class="project-tags">
+                <span class="tag">React.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <span class="project-status">MERN App</span>
+            </div>
+            <h3>VypaarX</h3>
+            <p class="project-summary">An online stock trading dashboard with portfolio views, market-focused UI, and trading data flows.</p>
+            <ul class="case-points">
+              <li><strong>Role:</strong> Developed the React interface and connected backend APIs for trading data flows.</li>
+              <li><strong>Challenge:</strong> Organized market data, holdings, and user actions into a clear dashboard experience.</li>
+              <li><strong>Impact:</strong> Turned a multi-step trading workflow into a focused single-app experience.</li>
+            </ul>
+           
+            <div class="project-links">
+              <a href="https://github.com/abhitade2005/VypaarX-Project" target="_blank" class="proj-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="https://vypaarx-project.onrender.com" target="_blank" rel="noopener noreferrer" class="proj-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project dashboard preview" loading="lazy">
+          </div>
+          <div class="project-content">
+            <div class="project-topline">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">API</span>
+              </div>
+              <span class="project-status">In Progress</span>
+            </div>
+            <h3>More Projects Coming Soon</h3>
+            <p class="project-summary">More polished case studies are in progress. In the meantime, GitHub has the latest repositories and experiments.</p>
+            <ul class="case-points">
+              <li><strong>Focus:</strong> Building practical apps with clean interfaces and real backend workflows.</li>
+              <li><strong>Next:</strong> Turning current experiments into polished demos with clearer documentation.</li>
+              <li><strong>Goal:</strong> Keep each project measurable, deployable, and easy for recruiters to review.</li>
+            </ul>
+            <div class="project-metrics" aria-label="Upcoming project highlights">
+              <span><strong>More</strong> Demos</span>
+              <span><strong>Clean</strong> Docs</span>
+              <span><strong>Active</strong> Builds</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abhitade2005" target="_blank" class="proj-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Notes Section -->
+<section class="notes-section" id="notes">
+  <div class="notes-inner">
+    <div class="notes-header">
+      <p class="section-label">NOTES</p>
+      <h2 class="section-heading">Learning Log</h2>
+    </div>
+
+    <div class="notes-grid">
+      <article class="note-card">
+        <span class="note-meta">Backend</span>
+        <h3>Building Secure REST APIs</h3>
+        <p>
+          Learned authentication with JWT, password hashing using bcrypt,
+          middleware architecture, request validation, and error handling
+          in Express.js applications.
+        </p>
+      </article>
+
+      <article class="note-card">
+        <span class="note-meta">Frontend</span>
+        <h3>Crafting Responsive User Interfaces</h3>
+        <p>
+          Improved my skills in Flexbox, CSS Grid, responsive layouts,
+          reusable React components, and creating modern user experiences
+          across different screen sizes.
+        </p>
+      </article>
+
+      <article class="note-card">
+        <span class="note-meta">DSA</span>
+        <h3>Patterns from LeetCode Problems</h3>
+        <p>
+          Practiced recognizing patterns such as Binary Search, Sliding
+          Window, Two Pointers, Trees, Graphs, and Dynamic Programming
+          for coding interviews.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-wordmark footer-logo">Abhishek Tade<span class="dot">.</span></div>
+          <p>Full MERN Stack Developer · Programmer · DSA Enthusiast</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/abhishek-tade-048061340/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/abhitade2005" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:abhitade2005@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/abhiii_shek03/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Abhishek Tade. All rights reserved.</p>
+       
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
